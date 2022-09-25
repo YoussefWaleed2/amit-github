@@ -1,0 +1,209 @@
+:root{
+    --main-color:#e84118;
+    --white: #f5f6fa;
+    --dark-grey: #2f3640;
+    --font-size: 16px;
+    --soft-grey: #c2c2c2;
+    --facebook: #1877f2;
+    --twitter: #1da1f2;
+    --google: #ea4335;
+    --youtube:#ff0000;
+}
+nav .logo {
+    color: var(--white) !important;
+}
+nav .logo span{
+    color: var(--main-color);
+}
+header nav .menu a{
+    color: var(--white) !important;
+}
+header{
+    background:rgba(44, 44, 44, 0.5) url(../img/slide-1.jpg);
+    background-blend-mode: darken;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* header .overlay{
+    background-color: var(--dark-grey);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+} */
+
+header .caption h1{
+    font-size: calc(var(--font-size) + 40px);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header .caption {
+    color: var(--white) !important;
+}
+header .caption a{
+    color: var(--white) !important;
+}
+header .caption span{
+    color: var(--main-color);
+}
+.nav-link:hover{
+    color:var(--main-color) !important;
+}
+.btn:hover{
+    color: var(--main-color) !important;
+}
+
+.feature .box div{
+    width: 10vw;
+    /* line-height: 15vh; */
+    height: 15vh;
+    margin: auto;
+    color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+.feature .box div:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: grab;
+}
+
+.our-work .caption span {
+    color: var(--main-color);
+}
+
+.our-work .caption p{
+    width: 40%;
+}
+.our-work .work{
+border: 1px solid var(--soft-grey);
+
+}
+
+.our-work .work:hover{
+color: var(--soft-grey) !important;
+}
+.our-work img {
+    width: 100%;
+    height: 100%;
+}
+.our-work .desc{
+    background-color: rgba(65, 65, 65, 0);
+    height: 100%;
+    width: 100%;
+    color: var(--white);
+    padding-top: 5%;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    
+}
+.our-work .desc:hover{
+    background-color: rgba(65, 65, 65, 0.404);
+    opacity: 100%;
+}
+.our-work .desc button{
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.our-team .caption span{
+    color:var(--main-color);
+    
+
+}
+
+.our-team .team img{
+height: 20vh;
+filter: grayscale(100%);
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+transition: all ease-in-out 0.5s;
+}
+.our-team .team img:hover ~ .icons .fa-facebook{
+    transition: all ease-in-out 0.5s;
+}
+.our-team .team img:hover ~ .icons .fa-twitter{
+    transition: all ease-in-out 0.5s;
+}
+.our-team .team img:hover ~ .icons .fa-youtube{
+    transition: all ease-in-out 0.5s;
+}
+.our-team .team img:hover ~ .icons .fa-google{
+    transition: all ease-in-out 0.5s;
+}
+.our-team .team{
+    color: var(--soft-grey);
+   
+}
+.our-team .team img:hover{
+    filter: grayscale(0%);
+}
+.our-team .team img:hover ~ .icons .fa-facebook{
+    color: var(--facebook);
+}
+.our-team .team img:hover ~ .icons .fa-twitter{
+    color: var(--twitter);
+}
+.our-team .team img:hover ~ .icons .fa-youtube{
+    color: var(--youtube);
+}
+.our-team .team img:hover ~ .icons .fa-google{
+    color: var(--google);
+}
+.contact-us .caption span{
+    color:var(--main-color) !important;
+}
+.contact-us .icons{
+    font-size: calc(var(--font-size)+ 5px);
+}
+.contact-us{
+    background-image: url(../img/contact-bg.jpg);
+    height: 70vh;
+    z-index:0;
+}
+.contact-us .overlay{
+    background-color: #272c34;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.contact-us form input{
+    background: transparent;
+    color: var(--white) !important ;
+}
+.contact-us form textarea{
+    background: transparent;
+}
+.contact-us form input::placeholder,
+.contact-us form textarea::placeholder{
+    color: var(--white);
+}
+.contact-us button{
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: var(--white);
+    color: white;
+}
+
+.contact-us .icons .fa-facebook {
+    color: var(--facebook)
+}
+.contact-us .icons .fa-twitter{
+    color: var(--twitter)
+}
+.contact-us .icons .fa-google{
+    color: var(--google)
+}
+.contact-us .icons .fa-youtube{
+    color: var(--youtube)
+}
+.contact-us .caption p{
+color: var(--white);
+}
+.contact-us .caption h3{
+color: var(--white);
+}
+footer{
+    background-color: var(--dark-grey);
+}
+footer p{
+    color: var(--white);
+}
